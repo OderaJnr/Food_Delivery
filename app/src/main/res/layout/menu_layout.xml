@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="1dp"
+    app:cardElevation="15dp"
+    android:layout_margin="10dp"
+    android:id="@+id/cardView"
+    tools:ignore="RtlCompat">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/Sproduct_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Chapati"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+
+                <ImageView
+                    android:id="@+id/Sproduct_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="108dp"
+                    android:layout_marginTop="10dp"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="false"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/chapati" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="10dp">
+
+
+
+                <TextView
+                    android:id="@+id/Sproduct_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="5dp"
+                    android:hint="product Description"
+                    android:textSize="14sp"
+                    android:typeface="serif" />
+
+                <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                    android:id="@+id/numberbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="31dp"
+                    android:layout_marginTop="5dp"
+                    ></com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="31dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/menu_background"
+                    android:backgroundTint="#fff"
+                    android:text="Add to cart"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:typeface="serif" />
+
+
+                <TextView
+                    android:id="@+id/Sproduct_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:gravity="end"
+                    android:text="KSh 40"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/common_google_signin_btn_text_light_pressed"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>
